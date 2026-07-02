@@ -1,19 +1,29 @@
 {
+  "name": "mcp-demo",
+  "version": "1.0.0",
+  "description": "A hosted MCP demo service built with the TypeScript SDK.",
+  "license": "GPL-3.0-or-later",
+  "main": "dist/server-stdio.js",
+  "bin": {
+    "mcp-demo": "dist/server-stdio.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "dev": "ts-node src/server.ts",
+    "dev": "ts-node src/server-stdio.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server-stdio.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "express": "^5.2.1",
-    "signale": "^1.4.0",
-    "zod": "^4.4.3",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
     "@types/node": "^26.0.0"
   }
 }
